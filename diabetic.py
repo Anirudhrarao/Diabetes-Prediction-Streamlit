@@ -6,10 +6,11 @@ model = pickle.load(open('diabetic_model.pkl','rb'))
 scaler = pickle.load(open('stdscalers.pkl','rb'))
 
 st.set_page_config(page_title="Diabetes Prediction", page_icon="💉")
-st.markdown('''<h1 style="color:purple;font-family:verdana;font-size:50px">Diabetes Prediction</h1>''',unsafe_allow_html=True)
+st.markdown('''<h1 style="color:blue;font-family:verdana;font-size:50px">Diabetes Prediction</h1>''',unsafe_allow_html=True)
 
 st.markdown("""
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<span style="color: blue;">Author: @Anirudh</span>
 <div class="alert alert-danger" role="alert">
     This model is trained with 77.27% accuracy so it may give wrong prediction to.
 </div>
